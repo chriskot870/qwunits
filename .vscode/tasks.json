@@ -1,0 +1,45 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "StartGDBServer",
+      "type": "shell",
+      "command": "cmake/start_gdbserver.sh cmake/gdbserver.config",
+      "group": "build"
+    },
+    {
+      "label": "StopGDBServer",
+      "type": "shell",
+      "command": "cmake/stop_gdbserver.sh cmake/gdbserver.config",
+      "group": "build"
+    },
+    {
+      "label": "Scp WeatherStation",
+      "type": "shell",
+      "command": "cmake/scp_weatherstation.sh",
+      "group": "none"
+    },
+    {
+      "label": "StartUnitTestGDBServer",
+      "type": "shell",
+      "command": "cmake/start_unit_test_gdb_server.sh ${CMAKE_CURRENT_BINARY_DIR}/units_pressure_test",
+      "options": {
+        "env": {
+          "CTEST_FILE_PATH": "TEST_HELLO"
+        },
+      },
+      "group": "test"
+    },
+    {
+      "label": "StopUnitTestGDBServer",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "cmake/stop_unit_test_gdb_server.sh",
+      "group": "test"
+    }
+  ]
+}
