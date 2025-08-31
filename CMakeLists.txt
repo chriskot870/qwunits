@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.20.0)
 
 #
 # Need to set this variable prior to project
-#
-set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/toolchain.cmake)
+# WE let presets set this
+#set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/toolchain.cmake)
 
 # set the prefix to /usr/local/qw
 # TARGETS will get installed into /usr/local/qw/bin by default

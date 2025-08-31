@@ -1,0 +1,61 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "x64-debug",
+            "displayName": "x64 Debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/x64-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "aarch64-debug",
+            "displayName": "Arm 64 Debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/aarch64-debug",
+            "toolchainFile": "${sourceDir}/cmake/aarch64_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "x64-release",
+            "displayName": "x64 Release",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/x64-release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "aarch64-release",
+            "displayName": "Arm 64 Release",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/aarch64-release",
+            "toolchainFile": "${sourceDir}/cmake/aarch64_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "x64-debug",
+            "configurePreset": "x64-debug"
+        },
+        {
+            "name": "aarch64-debug",
+            "configurePreset": "aarch64-debug"
+        },
+        {
+            "name": "x64-release",
+            "configurePreset": "x64-release"
+        },
+        {
+            "name": "aarch64-release",
+            "configurePreset": "aarch64-release"
+        }
+    ]
+}
