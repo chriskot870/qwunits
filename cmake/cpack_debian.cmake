@@ -90,7 +90,7 @@ set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/local/qw")
 # Apt wants these scripts named <package>.postinst and <package>.prerm.
 # I didn't see this documented anywhere but got errors when I just had postinst and prerm.
 # These files get installed in /var/lib/dpkg/info along with a package .list file and .md5sum file after installation
-#
-set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA
+# Only use the postinst and postrm in the runtime package.
+set(CPACK_DEBIAN_RUNTIME_PACKAGE_CONTROL_EXTRA
   "${CMAKE_SOURCE_DIR}/src/config/postinst;${CMAKE_SOURCE_DIR}/src/config/postrm")
 
