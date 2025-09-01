@@ -48,12 +48,10 @@ add_subdirectory(direction)
 
 find_package(fmt REQUIRED)
 
-set(MEASUREMENT_HEADERS_INSTALL_DIR include/units)
-
 # Install measurement header file for dev package
 install(
   FILES include/unit_measurement.h
-  DESTINATION ${MEASUREMENT_HEADERS_INSTALL_DIR}
+  DESTINATION include/unit_measurement.h
   COMPONENT dev
 )
 # Install static library for dev package

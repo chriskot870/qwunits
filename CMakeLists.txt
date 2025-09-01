@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.28.0)
 # set the prefix to /usr/local/qw
 # TARGETS will get installed into /usr/local/qw/bin by default
 # This needs to be done prior to defining the project
-set(CMAKE_INSTALL_PREFIX  "/usr/local/qw")
+set(CMAKE_INSTALL_PREFIX  "/usr/lib/qw/units")
 
 #
 # Set the project name and the compilers to be used

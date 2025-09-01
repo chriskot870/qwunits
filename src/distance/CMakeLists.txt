@@ -7,7 +7,7 @@ add_library(distance_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
-set(DISTANCE_HEADERS_INSTALL_DIR include/units/humidity)
+set(DISTANCE_HEADERS_INSTALL_DIR distance/include)
 target_include_directories(distance_units PRIVATE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>

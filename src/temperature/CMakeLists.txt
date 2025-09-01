@@ -8,7 +8,7 @@ add_library(temperature_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
-set(TEMPERATURE_HEADERS_INSTALL_DIR include/units/temperature)
+set(TEMPERATURE_HEADERS_INSTALL_DIR temperature/include)
 target_include_directories(temperature_units PUBLIC
   $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
