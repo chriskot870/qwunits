@@ -9,11 +9,22 @@ add_library(speed_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
+set(SPEED_HEADERS_INSTALL_DIR include/units/speed)
 target_include_directories(speed_units PRIVATE
-  ${CMAKE_SOURCE_DIR}/src
-  ${CMAKE_CURRENT_SOURCE_DIR}
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:${SPEED_HEADERS_INSTALL_DIR}>
 )
 
+install(
+  FILES include/speed.h
+        include/miles_per_hour.h
+        include/kilometers_per_hour.h
+        include/meters_per_second.h
+        include/knots.h
+  DESTINATION ${SPEED_HEADERS_INSTALL_DIR}
+  COMPONENT dev
+)
 
 #
 # Use the C++23 option

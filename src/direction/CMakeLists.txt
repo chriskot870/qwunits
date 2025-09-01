@@ -8,9 +8,20 @@ add_library(direction_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
+set(DIRECTION_HEADERS_INSTALL_DIR include/units/direction)
 target_include_directories(direction_units PRIVATE
-  ${CMAKE_CURRENT_SOURCE_DIR}
-  ${CMAKE_SOURCE_DIR}/src
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:${DIRECTION_HEADERS_INSTALL_DIR}>
+)
+
+install(
+  FILES include/direction.h
+        include/degrees.h
+        include/radians.h
+        include/compass_heading.h
+  DESTINATION ${DIRECTION_HEADERS_INSTALL_DIR}
+  COMPONENT dev
 )
 
 #

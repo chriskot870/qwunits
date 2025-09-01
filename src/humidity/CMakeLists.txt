@@ -5,11 +5,18 @@ add_library(humidity_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
+set(HUMIDITY_HEADERS_INSTALL_DIR include/units/humidity)
 target_include_directories(humidity_units PRIVATE
-  ${CMAKE_SOURCE_DIR}/src/lib
-  ${CMAKE_CURRENT_SOURCE_DIR}
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:${HUMIDITY_HEADERS_INSTALL_DIR}>
 )
 
+install(
+  FILES include/relative_humidity.h
+  DESTINATION ${HUMIDITY_HEADERS_INSTALL_DIR}
+  COMPONENT dev
+)
 #
 # Use the C++23 option
 # Done higher up with add_compile_options

@@ -12,6 +12,21 @@ target_include_directories(pressure_units PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+set(PRESSURE_HEADERS_INSTALL_DIR include/units/direction)
+target_include_directories(pressure_units PRIVATE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:${PRESSURE_HEADERS_INSTALL_DIR}>
+)
+
+install(
+  FILES include/pressure.h
+        include/millibar.h
+        include/inches_mercury.h
+  DESTINATION ${PRESSURE_HEADERS_INSTALL_DIR}
+  COMPONENT dev
+)
+
 #
 # Use the C++23 option
 # Set higher up with add_compile_options

@@ -1,7 +1,7 @@
 #
 # This is the top-level CmakeLists.txt file
 #
-cmake_minimum_required(VERSION 3.20.0)
+cmake_minimum_required(VERSION 3.28.0)
 
 #
 # Need to set this variable prior to project

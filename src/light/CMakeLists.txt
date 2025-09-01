@@ -8,9 +8,20 @@ add_library(light_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
+set(LIGHT_HEADERS_INSTALL_DIR include/units/light)
 target_include_directories(light_units PRIVATE
-  ${CMAKE_SOURCE_DIR}/src
-  ${CMAKE_CURRENT_SOURCE_DIR}
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<INSTALL_INTERFACE:${LIGHT_HEADERS_INSTALL_DIR}>
+)
+
+install(
+  FILES include/light.h
+        include/lux.h
+        include/klux.h
+        include/foot_candle.h
+  DESTINATION ${LIGHT_HEADERS_INSTALL_DIR}
+  COMPONENT dev
 )
 
 #

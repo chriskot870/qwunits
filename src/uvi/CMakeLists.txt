@@ -5,9 +5,17 @@ add_library(uvi_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
-target_include_directories(uvi_units PRIVATE
-  ${CMAKE_SOURCE_DIR}/src
-  ${CMAKE_CURRENT_SOURCE_DIR}
+set(UVI_HEADERS_INSTALL_DIR include/units/uvi)
+target_include_directories(temperature_units PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<INSTALL_INTERFACE:${UVI_HEADERS_INSTALL_DIR}>
+)
+
+install(
+  FILES include/uvi.h
+  DESTINATION ${UVI_HEADERS_INSTALL_DIR}
+  COMPONENT dev
 )
 
 #
