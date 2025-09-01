@@ -27,7 +27,6 @@
  */
 #include "include/knots.h"
 
-#include <compare>
 #include <string>
 
 #include "fmt/format.h"

@@ -27,7 +27,6 @@
  */
 #include "include/meters_per_second.h"
 
-#include <compare>
 #include <string>
 
 #include "fmt/format.h"

@@ -27,7 +27,6 @@
  */
 #include "include/compass_heading.h"
 
-#include <compare>
 #include <algorithm>
 #include <iterator>
 #include <string>
@@ -37,7 +36,6 @@
 #include "include/direction.h"
 
 using std::string;
-using std::strong_ordering;
 using fmt::format;
 
 namespace qw::units {

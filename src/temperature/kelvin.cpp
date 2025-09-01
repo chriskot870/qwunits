@@ -31,7 +31,6 @@
 
 #include <fmt/format.h>
 #include <math.h>
-#include <compare>
 #include <string>
 
 using std::string;

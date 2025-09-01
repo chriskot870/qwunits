@@ -28,7 +28,6 @@
 
 #include "include/millimeter.h"
 
-#include <compare>
 #include <string>
 
 using std::string;

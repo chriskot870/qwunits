@@ -27,7 +27,6 @@
  */
 #include "include/kilometers_per_hour.h"
 
-#include <compare>
 #include <string>
 
 #include "fmt/format.h"

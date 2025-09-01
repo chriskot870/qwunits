@@ -28,7 +28,6 @@
 
 #include "include/foot_candle.h"
 
-#include <compare>
 #include <string>
 
 using std::string;

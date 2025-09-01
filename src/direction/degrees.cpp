@@ -27,7 +27,6 @@
  */
 #include "include/degrees.h"
 
-#include <compare>
 #include <string>
 
 #include "fmt/format.h"
@@ -35,7 +34,6 @@
 #include "include/direction.h"
 
 using std::string;
-using std::strong_ordering;
 
 namespace qw::units {
 

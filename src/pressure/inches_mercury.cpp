@@ -28,7 +28,6 @@
 
 #include "include/inches_mercury.h"
 
-#include <compare>
 #include <string>
 
 using std::string;

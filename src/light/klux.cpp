@@ -28,7 +28,6 @@
 
 #include "include/klux.h"
 
-#include <compare>
 #include <string>
 
 using std::string;

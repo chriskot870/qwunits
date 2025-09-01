@@ -28,7 +28,6 @@
 
 #include "include/millibar.h"
 
-#include <compare>
 #include <string>
 
 #include "fmt/format.h"
