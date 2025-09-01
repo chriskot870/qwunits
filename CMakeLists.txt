@@ -46,7 +46,7 @@ add_subdirectory(src)
 # Be sure and set PACK_PROPERTIES_FILE pror to including CPack.
 #
 # After a build you can cd to build and run cpack and it should build
-# a packge for you.
+# a package for you.
 #
 # set(CPACK_PROPERTIES_FILE ${CMAKE_SOURCE_DIR}/cmake/cpack_debian.cmake)
 #set(CPACK_GENERATOR "DEB")

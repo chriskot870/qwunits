@@ -1,2 +1,13 @@
 #!/bin/bash
+if [ ! -f /etc/ld.so.conf.d/linux-qw.conf ]
+then
+  echo /usr/local/qw/lib > /etc/ld.so.conf.d/linux-qw.conf
+else
+  grep -q /usr/local/qw/lib /etc/ld.so.conf.d/linux-qw.conf
+  if [ $? -ne 0 ]; then
+    echo  > /etc/ld.so.conf.d/linux-qw.conf  # Add a new line ot be sure we start on a new line
+    echo /usr/local/qw/lib > /etc/ld.so.conf.d/linux-qw.conf
+  fi
+fi
+# We know that the path exists in the file so run ld.config to register it
 ld.config
