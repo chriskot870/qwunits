@@ -53,20 +53,33 @@ set(CPACK_PACKAGE_VERSION_MINOR "1")
 set(CPACK_PACKAGE_VERSION_PATCH "1")
 set(CPACK_DEBIAN_PACKAGE_VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH})
 set(CPACK_DEBIAN_PACKAGE_RELEASE "2")
-set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}_${CPACK_DEBIAN_PACKAGE_VERSION}-${CPACK_DEBIAN_PACKAGE_RELEASE}_${CPACK_DEBIAN_PACKAGE_ARCHITECTURE}")
-
+#set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}_${CPACK_DEBIAN_PACKAGE_VERSION}-${CPACK_DEBIAN_PACKAGE_RELEASE}_${CPACK_DEBIAN_PACKAGE_ARCHITECTURE}")
+#set(CPACK_PACKAGE_FILE_NAME ${CPACK_DEBIAN_PACKAGE_NAME})
 #cpack_add_component(runtime)
 #cpack_add_component(dev)
 
+# We want to have two packages created
+# One for runtime that has the shared library and the /etc/ld.so.conf.d/linux-qw.conf file that
+# tells ld.config where the new shared library is.
+# This took a while to figure out and there is a lot of guessing here so you may not need
+# all of these. The linch pin was CPACK_COMPONENTS_GROUPING_ IGNORE. Once I added that I
+# got two packages. I didn't try to see if I could remove any of the others I just left
+# it like it was.
 set(CPACK_DEB_COMPONENT_INSTALL ON)
 set(CPACK_COMPONENTS_INCLUDE_IN_ALL_INSTALLERS OFF)
 set(CPACK_COMPONENTS_OVERWRITE_INSTALLERS ON)
 set(CPACK_COMPONENTS_ALL_IN_ONE_PACKAGE OFF)
+set(CPACK_COMPONENTS_GROUPING IGNORE)  # This was the one that took me a while to figure out
 set(CPACK_COMPONENTS_ALL runtime dev)
-set(CPACK_COMPONENT_RUNTIME_NAME "runtime")
+set(CPACK_COMPONENT_RUNTIME_NAME runtime)
+set(CPACK_DEB_RUNTIME_FILE_NAME
+  "${CPACK_DEBIAN_PACKAGE_NAME}_${CPACK_DEBIAN_PACKAGE_VERSION}-${CPACK_DEBIAN_PACKAGE_RELEASE}_${CPACK_DEBIAN_PACKAGE_ARCHITECTURE}")
 set(CPACK_COMPONENT_RUNTIME_DESCRIPTION "Runtime package for" ${CPACK_DEBIAN_PACKAGE_NAME})
-set(CPACK_COMPONENT_DEVELOPMENT_NAME "dev")
+set(CPACK_COMPONENT_DEVELOPMENT_NAME dev)
+set(CPACK_DEB_DEV_FILE_NAME
+  "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_COMPONENT_DEVELOPMENT_NAME}_${CPACK_DEBIAN_PACKAGE_VERSION}-${CPACK_DEBIAN_PACKAGE_RELEASE}_${CPACK_DEBIAN_PACKAGE_ARCHITECTURE}")
 set(CPACK_COMPONENT_DEVELOPMENT_DESCRIPTION "Development package for" ${CPACK_DEBIAN_PACKAGE_NAME})
+set(CPACK_COMPONENT_DEVELOPMENT_DEPENDS runtime)
 #
 # Define the install prefix
 #
@@ -78,4 +91,5 @@ set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/local/qw")
 # I didn't see this documented anywhere but got errors when I just had postinst and prerm.
 # These files get installed in /var/lib/dpkg/info along with a package .list file and .md5sum file after installation
 #
-#set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${CMAKE_CURRENT_SOURCE_DIR}/src/config/postinst;${CMAKE_CURRENT_SOURCE_DIR}/src/config/prerm")
+set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${CMAKE_CURRENT_SOURCE_DIR}/src/config/postinst")
+

@@ -68,9 +68,4 @@ install(
   DESTINATION lib
   COMPONENT runtime
   )
-install(
-  FILES "config/linux-qw.conf"
-  DESTINATION "${CMAKE_INSTALL_SYSCONFDIR}/ld.so.conf.d"
-  COMPONENT runtime
-)
 
