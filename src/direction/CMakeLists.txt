@@ -8,7 +8,7 @@ add_library(direction_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
-set(DIRECTION_HEADERS_INSTALL_DIR direction/include)
+set(DIRECTION_HEADERS_INSTALL_DIR include/qw/units/direction/include)
 target_include_directories(direction_units PRIVATE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>

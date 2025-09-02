@@ -11,7 +11,8 @@ cmake_minimum_required(VERSION 3.28.0)
 # set the prefix to /usr/lib/qw/units
 # Libraries will be installed in /usr/lib/qw/units/lib
 # This needs to be done prior to defining the project
-set(CMAKE_INSTALL_PREFIX  "/usr/lib/qw/units")
+# This gets done in cpack_debian.cmake via CPACK_PACKAGING_INSTALL_PREFIX
+#set(CMAKE_INSTALL_PREFIX  "/usr/lib/qw/units") 
 
 #
 # Set the project name and the compilers to be used

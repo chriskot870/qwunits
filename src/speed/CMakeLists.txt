@@ -9,7 +9,7 @@ add_library(speed_units OBJECT
 #
 # Add this directory to the list of directories to look for include files
 #
-set(SPEED_HEADERS_INSTALL_DIR speed/include)
+set(SPEED_HEADERS_INSTALL_DIR include/qw/units/speed/include)
 target_include_directories(speed_units PRIVATE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>

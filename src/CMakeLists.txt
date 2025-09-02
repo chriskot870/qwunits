@@ -1,6 +1,4 @@
 
-
-
 add_compile_options(-fPIC -std=c++23)
 
 # set_target_properties(MyStaticLib PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
@@ -51,19 +49,19 @@ find_package(fmt REQUIRED)
 # Install measurement header file for dev package
 install(
   FILES include/unit_measurement.h
-  DESTINATION include/unit_measurement.h
+  DESTINATION include/qw/units/include/unit_measurement.h
   COMPONENT dev
 )
 # Install static library for dev package
 install(
   TARGETS ${CMAKE_PROJECT_NAME}_static
-  DESTINATION lib/lib${CMAKE_PROJECT_NAME}.a
+  DESTINATION lib/qw/units/lib/lib${CMAKE_PROJECT_NAME}.a
   COMPONENT dev
 )
 # Install shared library for runtime package
 install(
   TARGETS ${CMAKE_PROJECT_NAME}
-  DESTINATION lib
+  DESTINATION lib/qw/units/lib
   COMPONENT runtime
   )
 

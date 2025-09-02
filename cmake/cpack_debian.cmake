@@ -85,12 +85,13 @@ set(CPACK_DEBIAN_DEV_FILE_NAME
   "${CPACK_DEBIAN_DEV_PACKAGE_NAME}_${CPACK_DEBIAN_PACKAGE_VERSION}-${CPACK_DEBIAN_PACKAGE_RELEASE}_${CPACK_DEBIAN_PACKAGE_ARCHITECTURE}.deb")
 set(CPACK_COMPONENT_DEV_DESCRIPTION "Development package for ${CPACK_DEBIAN_PACKAGE_NAME}")
 set(PACK_DEBIAN_ENABLE_COMPONENT_DEPENDS ON)
-set(CPACK_COMPONENT_DEV_DEPENDS runtime)
+set(CPACK_DEBIAN_DEV_PACKAGE_DEPENDS "libqwunits")
+#set(CPACK_COMPONENT_DEV_DEPENDS runtime)
 #
 # Define the install prefix
 #
-set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/lib/qw/units")
-
+# set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/lib/qw/units")
+set(CPACK_PACKAGING_INSTALL_PREFIX "/usr")
 #
 # Define the postinst script and the pre removal script
 # Apt wants these scripts named <package>.postinst and <package>.prerm.
