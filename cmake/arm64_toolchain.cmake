@@ -1,6 +1,6 @@
 # the name of the target operating system
 set(CMAKE_SYSTEM_NAME Linux)
-set(CMAKE_SYSTEM_PROCESSOR aarch64)
+set(CMAKE_SYSTEM_PROCESSOR arm64)
 
 # which compilers to use for C and C++
 set(CMAKE_C_COMPILER   aarch64-linux-gnu-gcc-12)

@@ -5,28 +5,31 @@ QW_UNITS_LIB_DIR="$QW_UNITS_INSTALL_DIR/lib"
 QW_LD_SO_CONF_FILE="/etc/ld.so.conf.d/linux-qw.conf"
 
 #
-# Id there are no qw units directory or no qw units lib directory
+# If there are no qw units directory or no qw units lib directory
 # or there are no files in the lib directory then there are no
 # units shared libraries.
-if [ [ ! -d $QW_UNITS_INSTALL_DIR ] || [ ! -d $QW_UNITS_LIB_DIR ] ]
-  # the qw units lib directory exist. See if there is a .so file
-  SHARED_LIB_CNT=`find $QW_UNITS_LIB_DIR -maxdepth 1 -type f -name \*\.so | wc -l`
-  # If there is not a shared library check if we have to remove it from ld.so.conf file
-  if [ $SHARED_LIB_CNT -eq 0 ]; then
-    if [ -f  $QW_LD_SO_CONF_FILE ]; then
-      # if there is an entry then remove it
-      QW_LIB_UNITS_CNT=`grep -c $QW_UNITS_LIB_DIR $QW_LD_SO_CONF_FILE`
-      if [ $QW_LIB_UNITS_CNT -eq 0 ]; then
-        sed -i "/$QW_UNITS_LIB_DIR/d" QW_LD_SO_CONF_FILE
-      fi
-      # Check if there are any qw libraries in the ld.so.conf file
-      QW_LIBS_CNT=`grep -c $QW_INSTALL_DIR $QW_LD_SO_CONF_FILE`
-      if [ $QW_LIBS_CNT -eq 0 ]; then
-        # If no qw libraries then remove the ld.so.conf file
-        rm $QW_LD_SO_CONF_FILE
-      fi
+SHARED_LIB_CNT='0'
+if [ -d $QW_UNITS_LIB_DIR ]; then
+  # the qw units lib directory exists. See if there is a .so file
+  SHARED_LIB_CNT=`find $QW_UNITS_LIB_DIR -maxdepth 1 -type f -name *.so | wc -l`
+fi
+# If there is not a shared library check if we have to remove it from ld.so.conf file
+if [ $SHARED_LIB_CNT -eq 0 ]; then
+  if [ -f  $QW_LD_SO_CONF_FILE ]; then
+    # There is a file check if there is an entry for units
+    QW_LIB_UNITS_CNT=`grep -c $QW_UNITS_LIB_DIR $QW_LD_SO_CONF_FILE`
+    if [ $QW_LIB_UNITS_CNT -gt 0 ]; then
+      # there is a line for units shared library so delete it
+      # Use the # for delimiter since pathname has / in it
+      sed -i "\#$QW_UNITS_LIB_DIR#d" $QW_LD_SO_CONF_FILE
+    fi
+    # Check if there are any qw libraries in the ld.so.conf file
+    QW_LIBS_CNT=`grep -c $QW_INSTALL_DIR $QW_LD_SO_CONF_FILE`
+    if [ $QW_LIBS_CNT -eq 0 ]; then
+      # If no qw libraries then remove the ld.so.conf file
+      rm $QW_LD_SO_CONF_FILE
     fi
   fi
 fi
-# run ld.so.conf to register any changes
-ld.config
+# run ldconfig to register any changes
+ldconfig

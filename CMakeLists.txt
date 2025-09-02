@@ -8,8 +8,8 @@ cmake_minimum_required(VERSION 3.28.0)
 # WE let presets set this
 #set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/toolchain.cmake)
 
-# set the prefix to /usr/local/qw
-# TARGETS will get installed into /usr/local/qw/bin by default
+# set the prefix to /usr/lib/qw/units
+# Libraries will be installed in /usr/lib/qw/units/lib
 # This needs to be done prior to defining the project
 set(CMAKE_INSTALL_PREFIX  "/usr/lib/qw/units")
 
