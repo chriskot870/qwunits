@@ -17,7 +17,7 @@ cmake_minimum_required(VERSION 3.28.0)
 #
 # Set the project name and the compilers to be used
 #
-project(qwunits CXX)
+project(qwlibs CXX)
 
 #enable_testing()
 #
