@@ -28,7 +28,7 @@ target_include_directories(${QW_LOGGER_LIB} PRIVATE
 
 # Install measurement header file for dev package
 install(
-  FILES include/logger.h.h
+  FILES include/logger.h
   DESTINATION include/qw/logger/include/logger.h
   COMPONENT dev
 )
