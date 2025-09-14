@@ -25,7 +25,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "include/compass_heading.h"
+#include "qw/units/direction/include/compass_heading.h"
 
 #include <algorithm>
 #include <iterator>
@@ -33,7 +33,7 @@
 
 #include "fmt/format.h"
 
-#include "include/direction.h"
+#include "qw/units/direction/include/direction.h"
 
 using std::string;
 using fmt::format;

@@ -26,12 +26,12 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_TEMPERATURE_INCLUDE_CELSIUS_H_
-#define SRC_TEMPERATURE_INCLUDE_CELSIUS_H_
+#ifndef SRC_QW_UNITS_TEMPERATURE_INCLUDE_CELSIUS_H_
+#define SRC_QW_UNITS_TEMPERATURE_INCLUDE_CELSIUS_H_
 
 #include <string>
 
-#include "include/temperature.h"
+#include "qw/units/temperature/include/temperature.h"
 
 namespace qw::units {
 
@@ -68,4 +68,4 @@ class Celsius : public Temperature {
 
 }  // namespace qw::units
 
-#endif  // SRC_TEMPERATURE_INCLUDE_CELSIUS_H_
+#endif  // SRC_QW_UNITS_TEMPERATURE_INCLUDE_CELSIUS_H_

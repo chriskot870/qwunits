@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/klux.h"
+#include "qw/units/light/include/klux.h"
 
 #include <string>
 

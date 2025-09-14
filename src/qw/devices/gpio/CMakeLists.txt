@@ -17,6 +17,8 @@ add_library(${QW_GPIO_LIB}_static STATIC
 
 find_package(fmt REQUIRED)
 
+# define installation directory for header files
+set(GPIO_HEADERS_INSTALL_DIR include/qw/devices/gpio/include)
 #
 # Add this directory to the list of directories to look for include files
 # Add directories for shared library target
@@ -32,7 +34,6 @@ target_include_directories(${QW_GPIO_LIB}_static PUBLIC
   $<INSTALL_INTERFACE:${GPIO_HEADERS_INSTALL_DIR}>
 )
 
-set(GPIO_HEADERS_INSTALL_DIR include/qw/devices/gpio/include)
 # Install measurement header file for dev package
 install( FILES
     include/qwgpio.h

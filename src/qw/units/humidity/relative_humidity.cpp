@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/relative_humidity.h"
+#include "qw/units/humidity/include/relative_humidity.h"
 
 #include <expected>
 #include <string>

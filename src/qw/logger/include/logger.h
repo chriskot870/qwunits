@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_LIB_QW_LOGGER_INCLUDE_LOGGER_H_
-#define SRC_LIB_QW_LOGGER_INCLUDE_LOGGER_H_
+#ifndef SRC_QW_LOGGER_INCLUDE_LOGGER_H_
+#define SRC_QW_LOGGER_INCLUDE_LOGGER_H_
 
 #include <syslog.h>
 #include <systemd/sd-journal.h>
@@ -94,4 +94,4 @@ extern Logger logger;
 
 }  // namespace qw::logging
 
-#endif  // SRC_LIB_QW_LOGGER_INCLUDE_LOGGER_H_
+#endif  // SRC_QW_LOGGER_INCLUDE_LOGGER_H_

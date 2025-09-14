@@ -26,13 +26,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_PRESSURE_INCLUDE_INCHES_MERCURY_H_
-#define SRC_PRESSURE_INCLUDE_INCHES_MERCURY_H_
+#ifndef SRC_QW_UNITS_PRESSURE_INCLUDE_INCHES_MERCURY_H_
+#define SRC_QW_UNITS_PRESSURE_INCLUDE_INCHES_MERCURY_H_
 
 #include <string>
 
-#include "include/millibar.h"
-#include "include/pressure.h"
+#include "qw/units/pressure/include/millibar.h"
+#include "qw/units/pressure/include/pressure.h"
 
 namespace qw::units {
 
@@ -66,4 +66,4 @@ class InchesMercury : public Pressure {
 
 }  // namespace qw::units
 
-#endif  // SRC_PRESSURE_INCLUDE_INCHES_MERCURY_H_
+#endif  // SRC_QW_UNITS_PRESSURE_INCLUDE_INCHES_MERCURY_H_

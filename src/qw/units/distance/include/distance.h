@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_DISTANCE_INCLUDE_DISTANCE_H_
-#define SRC_DISTANCE_INCLUDE_DISTANCE_H_
+#ifndef SRC_QW_UNITS_DISTANCE_INCLUDE_DISTANCE_H_
+#define SRC_QW_UNITS_DISTANCE_INCLUDE_DISTANCE_H_
 
 #include <fmt/format.h>
 #include <math.h>
@@ -98,4 +98,4 @@ class Distance {
 
 }  // namespace qw::units
 
-#endif  // SRC_DISTANCE_INCLUDE_DISTANCE_H_
+#endif  // SRC_QW_UNITS_DISTANCE_INCLUDE_DISTANCE_H_

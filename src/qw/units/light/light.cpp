@@ -29,10 +29,10 @@
 #include <compare>
 #include <string>
 
-#include "include/light.h"
-#include "include/foot_candle.h"
-#include "include/lux.h"
-#include "include/klux.h"
+#include "qw/units/light/include/light.h"
+#include "qw/units/light/include/foot_candle.h"
+#include "qw/units/light/include/lux.h"
+#include "qw/units/light/include/klux.h"
 
 using std::string;
 using std::strong_ordering;

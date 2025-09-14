@@ -25,13 +25,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "include/degrees.h"
+#include "qw/units/direction/include/degrees.h"
 
 #include <string>
 
 #include "fmt/format.h"
 
-#include "include/direction.h"
+#include "qw/units/direction/include/direction.h"
 
 using std::string;
 

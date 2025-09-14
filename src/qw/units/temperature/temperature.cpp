@@ -26,14 +26,14 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/temperature.h"
+#include "qw/units/temperature/include/temperature.h"
 
 #include <compare>
 #include <string>
 
-#include "include/celsius.h"
-#include "include/fahrenheit.h"
-#include "include/kelvin.h"
+#include "qw/units/temperature/include/celsius.h"
+#include "qw/units/temperature/include/fahrenheit.h"
+#include "qw/units/temperature/include/kelvin.h"
 
 using std::string;
 using std::strong_ordering;

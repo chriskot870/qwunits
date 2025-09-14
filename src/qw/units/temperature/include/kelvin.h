@@ -26,12 +26,12 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_TEMPERATURE_INCLUDE_KELVIN_H_
-#define SRC_TEMPERATURE_INCLUDE_KELVIN_H_
+#ifndef SRC_QW_UNITS_TEMPERATURE_INCLUDE_KELVIN_H_
+#define SRC_QW_UNITS_TEMPERATURE_INCLUDE_KELVIN_H_
 
 #include <string>
 
-#include "include/temperature.h"
+#include "qw/units/temperature/include/temperature.h"
 
 namespace qw::units {
 
@@ -65,4 +65,4 @@ class Kelvin : public Temperature {
 
 }  // namespace qw::units
 
-#endif  // SRC_TEMPERATURE_INCLUDE_KELVIN_H_
+#endif  // SRC_QW_UNITS_TEMPERATURE_INCLUDE_KELVIN_H_

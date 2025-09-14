@@ -26,14 +26,14 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_DIRECTION_INCLUDE_COMPASS_HEADING_H_
-#define SRC_DIRECTION_INCLUDE_COMPASS_HEADING_H_
+#ifndef SRC_QW_UNITS_DIRECTION_INCLUDE_COMPASS_HEADING_H_
+#define SRC_QW_UNITS_DIRECTION_INCLUDE_COMPASS_HEADING_H_
 
 #include <string>
 #include <array>
 #include <map>
 
-#include "include/direction.h"
+#include "qw/units/direction/include/direction.h"
 
 namespace qw::units {
 
@@ -105,4 +105,4 @@ class CompassHeading : public Direction {
 
 }  // namespace qw::units
 
-#endif  // SRC_DIRECTION_INCLUDE_COMPASS_HEADING_H_
+#endif  // SRC_QW_UNITS_DIRECTION_INCLUDE_COMPASS_HEADING_H_

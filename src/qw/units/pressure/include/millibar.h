@@ -26,12 +26,12 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_PRESSURE_INCLUDE_MILLIBAR_H_
-#define SRC_PRESSURE_INCLUDE_MILLIBAR_H_
+#ifndef SRC_QW_UNITS_PRESSURE_INCLUDE_MILLIBAR_H_
+#define SRC_QW_UNITS_PRESSURE_INCLUDE_MILLIBAR_H_
 
 #include <string>
 
-#include "include/pressure.h"
+#include "qw/units/pressure/include/pressure.h"
 
 namespace qw::units {
 
@@ -65,4 +65,4 @@ class Millibar : public Pressure {
 
 }  // namespace qw::units
 
-#endif  // SRC_PRESSURE_INCLUDE_MILLIBAR_H_
+#endif  // SRC_QW_UNITS_PRESSURE_INCLUDE_MILLIBAR_H_

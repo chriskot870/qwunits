@@ -29,11 +29,11 @@
 #include <compare>
 #include <string>
 
-#include "include/speed.h"
-#include "include/kilometers_per_hour.h"
-#include "include/knots.h"
-#include "include/meters_per_second.h"
-#include "include/miles_per_hour.h"
+#include "qw/units/speed/include/speed.h"
+#include "qw/units/speed/include/kilometers_per_hour.h"
+#include "qw/units/speed/include/knots.h"
+#include "qw/units/speed/include/meters_per_second.h"
+#include "qw/units/speed/include/miles_per_hour.h"
 
 using std::string;
 using std::strong_ordering;

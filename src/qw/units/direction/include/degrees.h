@@ -26,12 +26,12 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_DIRECTION_INCLUDE_DEGREES_H_
-#define SRC_DIRECTION_INCLUDE_DEGREES_H_
+#ifndef SRC_QW_UNITS_DIRECTION_INCLUDE_DEGREES_H_
+#define SRC_QW_UNITS_DIRECTION_INCLUDE_DEGREES_H_
 
 #include <string>
 
-#include "include/direction.h"
+#include "qw/units/direction/include/direction.h"
 
 namespace qw::units {
 
@@ -64,4 +64,4 @@ class Degrees : public Direction {
 };
 
 }
-#endif  // SRC_DIRECTION_INCLUDE_DEGREES_H_
+#endif  // SRC_QW_UNITS_DIRECTION_INCLUDE_DEGREES_H_

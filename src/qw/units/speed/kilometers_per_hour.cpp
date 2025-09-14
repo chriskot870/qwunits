@@ -25,7 +25,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "include/kilometers_per_hour.h"
+#include "qw/units/speed/include/kilometers_per_hour.h"
 
 #include <string>
 

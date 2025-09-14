@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/fahrenheit.h"
+#include "qw/units/temperature/include/fahrenheit.h"
 
 #include <fmt/format.h>
 #include <math.h>

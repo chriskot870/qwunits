@@ -25,13 +25,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "include/distance.h"
+#include "qw/units/distance/include/distance.h"
 
 #include <compare>
 #include <string>
 
-#include "include/inches.h"
-#include "include/millimeter.h"
+#include "qw/units/distance/include/inches.h"
+#include "qw/units/distance/include/millimeter.h"
 
 using std::string;
 using std::strong_ordering;

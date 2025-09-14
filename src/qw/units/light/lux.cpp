@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/lux.h"
+#include "qw/units/light/include/lux.h"
 
 #include <string>
 

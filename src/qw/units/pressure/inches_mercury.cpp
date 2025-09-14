@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/inches_mercury.h"
+#include "qw/units/pressure/include/inches_mercury.h"
 
 #include <string>
 

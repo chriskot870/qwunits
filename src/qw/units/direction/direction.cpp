@@ -25,14 +25,14 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "include/direction.h"
+#include "qw/units/direction/include/direction.h"
 
 #include <compare>
 #include <string>
 
-#include "include/degrees.h"
-#include "include/radians.h"
-#include "include/compass_heading.h"
+#include "qw/units/direction/include/degrees.h"
+#include "qw/units/direction/include/radians.h"
+#include "qw/units/direction/include/compass_heading.h"
 
 using std::string;
 using std::strong_ordering;

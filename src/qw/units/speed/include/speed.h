@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_SPEED_INCLUDE_SPEED_H_
-#define SRC_SPEED_INCLUDE_SPEED_H_
+#ifndef SRC_QW_UNITS_SPEED_INCLUDE_SPEED_H_
+#define SRC_QW_UNITS_SPEED_INCLUDE_SPEED_H_
 
 #include <compare>
 #include <string>
@@ -112,4 +112,4 @@ class Speed {
 
 }  // namespace qw::units
 
-#endif  // SRC_SPEED_INCLUDE_SPEED_H_
+#endif  // SRC_QW_UNITS_SPEED_INCLUDE_SPEED_H_

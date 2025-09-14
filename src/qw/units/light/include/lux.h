@@ -26,13 +26,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_LIGHT_INCLUDE_LUX_H_
-#define SRC_LIGHT_INCLUDE_LUX_H_
+#ifndef SRC_QW_UNITS_LIGHT_INCLUDE_LUX_H_
+#define SRC_QW_UNITS_LIGHT_INCLUDE_LUX_H_
 
 #include <string>
 
-#include "include/foot_candle.h"
-#include "include/light.h"
+#include "qw/units/light/include/klux.h"
+#include "qw/units/light/include/light.h"
 
 namespace qw::units {
 
@@ -66,4 +66,4 @@ class Lux : public Light {
 
 }  // namespace qw::units
 
-#endif  // SRC_LIGHT_INCLUDE_LUX_H_
+#endif  // SRC_QW_UNITS_LIGHT_INCLUDE_LUX_H_

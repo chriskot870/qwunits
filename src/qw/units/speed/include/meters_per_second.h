@@ -26,13 +26,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_SPEED_INCLUDE_METERS_PER_SECOND_H_
-#define SRC_SPEED_INCLUDE_METERS_PER_SECOND_H_
+#ifndef SRC_QW_UNITS_SPEED_INCLUDE_METERS_PER_SECOND_H_
+#define SRC_QW_UNITS_SPEED_INCLUDE_METERS_PER_SECOND_H_
 
 #include <string>
 #include <string_view>
 
-#include "include/speed.h"
+#include "qw/units/speed/include/speed.h"
 
 namespace qw::units {
 
@@ -66,4 +66,4 @@ class MetersPerSecond : public Speed {
 
 }  // namespace qw::units
 
-#endif  // SRC_SPEED_INCLUDE_METERS_PER_SECOND_H_
+#endif  // SRC_QW_UNITS_SPEED_INCLUDE_METERS_PER_SECOND_H_

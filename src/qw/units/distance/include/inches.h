@@ -26,13 +26,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_DISTANCE_INCLUDE_INCHES_H_
-#define SRC_DISTANCE_INCLUDE_INCHES_H_
+#ifndef SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
+#define SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
 
 #include <string>
 
-#include "include/millimeter.h"
-#include "include/distance.h"
+#include "qw/units/distance/include/millimeter.h"
+#include "qw/units/distance/include/distance.h"
 
 namespace qw::units {
 
@@ -67,4 +67,4 @@ class Inches : public Distance {
 
 }  // namespace qw::units
 
-#endif  // SRC_DISTANCE_INCLUDE_INCHES_H_
+#endif  // SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_

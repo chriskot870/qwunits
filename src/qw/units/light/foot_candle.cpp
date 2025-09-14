@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "include/foot_candle.h"
+#include "qw/units/light/include/foot_candle.h"
 
 #include <string>
 

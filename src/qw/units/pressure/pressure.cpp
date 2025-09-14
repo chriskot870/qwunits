@@ -29,9 +29,9 @@
 #include <compare>
 #include <string>
 
-#include "include/pressure.h"
-#include "include/inches_mercury.h"
-#include "include/millibar.h"
+#include "qw/units/pressure/include/pressure.h"
+#include "qw/units/pressure/include/inches_mercury.h"
+#include "qw/units/pressure/include/millibar.h"
 
 using std::string;
 using std::strong_ordering;

@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_UVI_INCLUDE_UVI_H_
-#define SRC_UVI_INCLUDE_UVI_H_
+#ifndef SRC_QW_UNITS_UVI_INCLUDE_UVI_H_
+#define SRC_QW_UNITS_UVI_INCLUDE_UVI_H_
 
 #include <fmt/format.h>
 #include <math.h>
@@ -90,4 +90,4 @@ class Uvi {
 
 }  // namespace qw::units
 
-#endif  // SRC_UVI_INCLUDE_UVI_H_
+#endif  // SRC_QW_UNITS_UVI_INCLUDE_UVI_H_
