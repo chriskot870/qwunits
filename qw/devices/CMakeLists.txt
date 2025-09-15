@@ -8,13 +8,13 @@ add_compile_options(-fPIC -std=c++23)
 set(QW_WEATHER_DEVICES_LIB weatherdevices)
 
 add_library(${QW_WEATHER_DEVICES_LIB} SHARED
-  anomometer_adafruit.cpp
+  anemometer_adafruit.cpp
   ecowitt_ln90lp.cpp
 )
 
 # Also make a static library for dev package
 add_library(${QW_WEATHER_DEVICES_LIB}_static STATIC
-  anomometer_adafruit.cpp
+  anemometer_adafruit.cpp
   ecowitt_ln90lp.cpp
 )
 

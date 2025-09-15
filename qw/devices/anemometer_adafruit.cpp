@@ -26,7 +26,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "qw/devices/include/anomometer_adafruit.h"
+#include "qw/devices/include/anemometer_adafruit.h"
 
 #include <chrono>
 #include <expected>  // Cpplint thinks this is c system header // NOLINT
