@@ -33,8 +33,8 @@
  *
  */
 
-#ifndef SRC_LIB_QW_DEVICES_I2C_INCLUDE_LPS22_H_
-#define SRC_LIB_QW_DEVICES_I2C_INCLUDE_LPS22_H_
+#ifndef QW_DEVICES_I2C_INCLUDE_LPS22_H_
+#define QW_DEVICES_I2C_INCLUDE_LPS22_H_
 
 #include <errno.h>
 #include <fcntl.h>
@@ -392,4 +392,4 @@ class Lps22 {
 
 }  // namespace qw::devices
 
-#endif  // SRC_LIB_QW_DEVICES_I2C_INCLUDE_LPS22_H_
+#endif  // QW_DEVICES_I2C_INCLUDE_LPS22_H_

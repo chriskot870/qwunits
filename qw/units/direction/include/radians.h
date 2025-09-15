@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_
-#define SRC_QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_
+#ifndef QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_
+#define QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_
 
 #include <string>
 
@@ -64,4 +64,4 @@ class Radians : public Direction {
 };
 
 }  // namespace qw::units
-#endif  // SRC_QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_
+#endif  // QW_UNITS_DIRECTION_INCLUDE_RADIANS_H_

@@ -25,8 +25,8 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_CHIP_H_
-#define SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_CHIP_H_
+#ifndef QW_DEVICES_GPIO_INCLUDE_QWGPIO_CHIP_H_
+#define QW_DEVICES_GPIO_INCLUDE_QWGPIO_CHIP_H_
 
 #include <linux/gpio.h>
 #include <expected>
@@ -35,8 +35,8 @@
 #include <memory>
 #include <regex>
 
-#include "include/qwgpio.h"
-#include "include/qwgpio_group.h"
+#include "qw/devices/gpio/include/qwgpio.h"
+#include "qw/devices/gpio/include/qwgpio_group.h"
 
 namespace qw::devices {
 
@@ -91,4 +91,4 @@ class QwGpioChip {
 
 }  // namespace qw::devices
 
-#endif  // SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_CHIP_H_
+#endif  // QW_DEVICES_GPIO_INCLUDE_QWGPIO_CHIP_H_

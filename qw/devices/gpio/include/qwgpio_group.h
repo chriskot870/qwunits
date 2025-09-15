@@ -25,20 +25,20 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_GROUP_H_
-#define SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_GROUP_H_
+#ifndef QW_DEVICES_GPIO_INCLUDE_QWGPIO_GROUP_H_
+#define QW_DEVICES_GPIO_INCLUDE_QWGPIO_GROUP_H_
 
 #include <linux/gpio.h>
 
+#include <expected>
 #include <chrono>
 #include <cstdint>
-#include <expected>
 #include <memory>
 #include <string>
 #include <vector>
 
-#include "include/qwgpio.h"
-#include "include/qwgpio_chip.h"
+#include "qw/devices/gpio/include/qwgpio.h"
+#include "qw/devices/gpio/include/qwgpio_chip.h"
 
 namespace qw::devices {
 
@@ -147,4 +147,4 @@ class QwGpioGroup {
 
 }  // namespace qw::devices
 
-#endif  // SRC_LIB_QW_DEVICES_INCLUDE_QWGPIO_GROUP_H_
+#endif  // QW_DEVICES_GPIO_INCLUDE_QWGPIO_GROUP_H_

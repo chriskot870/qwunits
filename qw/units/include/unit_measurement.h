@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_
-#define SRC_QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_
+#ifndef QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_
+#define QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_
 
 #include <algorithm>
 #include <chrono>
@@ -302,4 +302,4 @@ class MeasurementHistory {
 
 }  // namespace qw::units
 
-#endif  // SRC_QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_
+#endif  // QW_UNITS_INCLUDE_UNIT_MEASUREMENT_H_

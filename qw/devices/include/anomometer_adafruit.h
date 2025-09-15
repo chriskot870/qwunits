@@ -37,8 +37,8 @@
  * and error.
  */
 
-#ifndef SRC_LIB_QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_
-#define SRC_LIB_QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_
+#ifndef QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_
+#define QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_
 
 #include <expected>  // cpplint is wrong about this being c system header // NOLINT
 
@@ -99,4 +99,4 @@ class AnomometerAdafruit {
 
 }  // namespace qw::devices
 
-#endif  // SRC_LIB_QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_
+#endif  // QW_DEVICES_INCLUDE_ANOMOMETER_ADAFRUIT_H_

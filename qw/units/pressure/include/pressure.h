@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_
-#define SRC_QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_
+#ifndef QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_
+#define QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_
 
 #include <fmt/format.h>
 #include <math.h>
@@ -103,4 +103,4 @@ class Pressure {
 
 }  // namespace qw::units
 
-#endif  // SRC_QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_
+#endif  // QW_UNITS_PRESSURE_INCLUDE_PRESSURE_H_

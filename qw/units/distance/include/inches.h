@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
-#define SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
+#ifndef QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
+#define QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
 
 #include <string>
 
@@ -67,4 +67,4 @@ class Inches : public Distance {
 
 }  // namespace qw::units
 
-#endif  // SRC_QW_UNITS_DISTANCE_INCLUDE_INCHES_H_
+#endif  // QW_UNITS_DISTANCE_INCLUDE_INCHES_H_

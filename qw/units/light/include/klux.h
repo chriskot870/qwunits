@@ -26,8 +26,8 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef SRC_QW_UNITS_LIGHT_INCLUDE_KLUX_H_
-#define SRC_QW_UNITS_LIGHT_INCLUDE_KLUX_H_
+#ifndef QW_UNITS_LIGHT_INCLUDE_KLUX_H_
+#define QW_UNITS_LIGHT_INCLUDE_KLUX_H_
 
 #include <string>
 
@@ -66,4 +66,4 @@ class Klux : public Light {
 
 }  // namespace qw::units
 
-#endif  // SRC_QW_UNITS_LIGHT_INCLUDE_KLUX_H_
+#endif  // QW_UNITS_LIGHT_INCLUDE_KLUX_H_
