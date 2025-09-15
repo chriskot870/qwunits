@@ -70,7 +70,14 @@ set(CPACK_COMPONENTS_INCLUDE_IN_ALL_INSTALLERS OFF)
 set(CPACK_COMPONENTS_OVERWRITE_INSTALLERS ON)
 set(CPACK_COMPONENTS_ALL_IN_ONE_PACKAGE OFF)
 set(CPACK_COMPONENTS_GROUPING IGNORE)  # This was the one that took me a while to figure out
-set(CPACK_COMPONENTS_ALL runtime dev)
+set(CPACK_COMPONENTS_ALL
+  runtime
+  weatherdevices_runtime
+  ecowittln90lp_runtime
+  dev
+  weatherdevices_dev
+  ecowittln90lp_dev
+)
 
 set(CPACK_COMPONENT_RUNTIME_NAME runtime)
 set(CPACK_DEBIAN_RUNTIME_PACKAGE_NAME libqwunits)
@@ -99,5 +106,5 @@ set(CPACK_PACKAGING_INSTALL_PREFIX "/usr")
 # These files get installed in /var/lib/dpkg/info along with a package .list file and .md5sum file after installation
 # Only use the postinst and postrm in the runtime package.
 set(CPACK_DEBIAN_RUNTIME_PACKAGE_CONTROL_EXTRA
-  "${CMAKE_SOURCE_DIR}/src/config/postinst;${CMAKE_SOURCE_DIR}/src/config/postrm")
+  "${CMAKE_SOURCE_DIR}/qw/config/postinst;${CMAKE_SOURCE_DIR}/qw/config/postrm")
 
