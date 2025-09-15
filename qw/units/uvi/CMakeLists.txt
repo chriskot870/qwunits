@@ -7,7 +7,7 @@ add_library(uvi_units OBJECT
 #
 set(UVI_HEADERS_INSTALL_DIR include/qw/units/uvi/include)
 target_include_directories(temperature_units PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${UVI_HEADERS_INSTALL_DIR}>
 )

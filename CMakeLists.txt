@@ -33,7 +33,7 @@ project(qwlibs CXX)
 # Add the sub-directories to build
 #
 
-add_subdirectory(src)
+add_subdirectory(qw)
 
 #
 # The include(Cpack) creates a default package build. In order to control

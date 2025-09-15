@@ -10,7 +10,7 @@ add_library(distance_units OBJECT
 set(DISTANCE_HEADERS_INSTALL_DIR include/qw/units/distance/include)
 target_include_directories(distance_units PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${DISTANCE_HEADERS_INSTALL_DIR}>
 )
 

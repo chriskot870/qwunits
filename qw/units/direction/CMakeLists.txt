@@ -11,7 +11,7 @@ add_library(direction_units OBJECT
 set(DIRECTION_HEADERS_INSTALL_DIR include/qw/units/direction/include)
 target_include_directories(direction_units PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${DIRECTION_HEADERS_INSTALL_DIR}>
 )
 

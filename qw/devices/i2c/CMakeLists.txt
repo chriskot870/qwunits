@@ -37,13 +37,13 @@ set(I2C_DEVICES_HEADERS_INSTALL_DIR include/qw/devices/i2c/include)
 # Add directories for shared library target
 target_include_directories(${QW_I2C_DEVICES_LIB} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${I2C_DEVICES_HEADERS_INSTALL_DIR}>
 )
 # Add same directoris for static library target
 target_include_directories(${QW_I2C_DEVICES_LIB}_static PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${I2C_DEVICES_HEADERS_INSTALL_DIR}>
 )
 
